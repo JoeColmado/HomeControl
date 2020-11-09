@@ -2,8 +2,8 @@
 const { Boards, Led, Relay, Relays, Sensor, Switch } = require("johnny-five");
 
 const ports = [
-    { id: "A", port: "/dev/ttyUSB1" },
-    { id: "B", port: "/dev/ttyUSB0" }
+    { id: "A", port: "/dev/ttyUSB1", repl: false },
+    { id: "B", port: "/dev/ttyUSB0" , repl: false }
    ];
 const boards = new Boards(ports);
 
